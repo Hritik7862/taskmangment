@@ -1,0 +1,49 @@
+.button{
+    width: 200;
+    height: 50px;
+    margin-top: 50px;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1.15px;  
+    border: none;
+  }
+  body{
+    background-color: #ecf0f3;
+    /* color: #a0a5a8; */
+  } 
+  .item1,.item2, .item3, .item4,.item5,.item6 {
+      border-radius: 10px;
+      /* background-color: #ecf0f3; */
+      padding: 5px;
+      box-shadow: 8px 8px 16px #ffffff, -8 -8 -16 #ffffff  ;
+  }
+  
+.item1 { grid-area: header; } 
+.item2 { grid-area: half; }
+.item3 { grid-area: main; }
+.item4 { grid-area: menu; }
+.item5 { grid-area: footer; }
+.item6 { grid-area: last; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header half half half'
+    'main main main main main main'
+    'menu menu menu footer footer footer'
+    'last last last last last last';
+  gap: 20px;
+  padding: 10px;
+}
+
+.grid-container{
+  text-align: center;
+  padding: 20px 0;
+  border-radius: 20px;
+  }
+
+.container{
+  background-color: #ffffff;
+}
+
